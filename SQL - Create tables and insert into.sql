@@ -103,7 +103,7 @@ insert into branch_supplier values(3, 'Patriot Paper', 'Paper');
 insert into branch_supplier values(2, 'J.T. Forms & Labels', 'Custom Forms');
 insert into branch_supplier values(3, 'Uni-ball', 'Writing Utensils');
 insert into branch_supplier values(3, 'Hammer Mill', 'Paper');
-insert into branch_supplier values(3, 'Stamford Lables', 'Custom Forms');
+insert into branch_supplier values(3, 'Stamford Labels', 'Custom Forms');
 
 -- client
 insert into client values(400, 'Dunmore Highschool', 2);
