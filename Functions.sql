@@ -1,3 +1,7 @@
+-- Find the employee with the highest salary
+select * from employee
+where salary = (select max(salary) from employee);
+
 -- Find the number of employees
 select count(emp_id) from employee;
 
