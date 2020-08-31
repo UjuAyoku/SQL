@@ -1,4 +1,4 @@
--- Find the employee with the highest salary
+-- Find the employee record with the highest salary
 select * from employee
 where salary = (select max(salary) from employee);
 
