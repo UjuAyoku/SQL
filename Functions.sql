@@ -2,6 +2,10 @@
 select * from employee
 where salary = (select max(salary) from employee);
 
+-- Find the 2nd highest salary
+select max(salary) from employee
+where salary not in (select max(salary) from employee);
+
 -- Find the number of employees
 select count(emp_id) from employee;
 
