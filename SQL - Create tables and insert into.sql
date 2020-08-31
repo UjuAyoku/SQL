@@ -128,3 +128,5 @@ insert into works_with values(105, 406, 130000);
 select * from employee;
 
 alter table employee change birth_Date birth_date date;
+
+insert into branch values (4, 'Buffalo', null, null);
