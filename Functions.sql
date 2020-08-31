@@ -6,6 +6,10 @@ where salary = (select max(salary) from employee);
 select max(salary) from employee
 where salary not in (select max(salary) from employee);
 
+-- Find the range of employee based on id
+select * from employee
+where emp_id between 100 and 108;
+
 -- Find the number of employees
 select count(emp_id) from employee;
 
