@@ -15,6 +15,11 @@ select e.first_name, e.last_name, e.salary, b.branch_name
 from employee e join branch b on (e.branch_id = b.branch_id)
 where salary in (select max(salary) from employee);
 
+-- Return the highest salary, employee name, and branch name for each branch
+select e.first_name, e.last_name, e.salary, b.branch_name 
+from employee e join branch b on (e.branch_id = b.branch_id)
+where salary in (select max(salary) from employee group by branch_id);
+
 -- Find the number of employees
 select count(emp_id) from employee;
 
