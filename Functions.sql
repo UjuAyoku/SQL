@@ -10,6 +10,10 @@ where salary not in (select max(salary) from employee);
 select * from employee
 where emp_id between 100 and 108;
 
+-- Return the employee name, highest salary and branch name
+select e.first_name, e.last_name, e.salary, b.branch_name
+from employee e join branch b on (e.branch_id = b.branch_id);
+
 -- Find the number of employees
 select count(emp_id) from employee;
 
