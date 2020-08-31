@@ -1,2 +1,1 @@
-# SQL 
-codes
+# SQL codes
